@@ -18,6 +18,7 @@
             <h3>What is the Showroom Price?(In lakhs)</h3><input id="second" name="Present_Price" required="required">
             <h3>How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
             <h3>How much owners previously had the car(0 or 1 or 3) ?</h3><input id="fourth" name="Owner" required="required">
+            <br><br>
             <div class="dropdown">      
                 <div>                <h3>What Is the Fuel type?</h3><select name="Fuel_Type_Petrol" id="fuel" required="required">
                 <option value="Petrol">Petrol</option>
@@ -44,6 +45,7 @@
 
         </form>
     </div>
+    <p class="info">Made with ❤️ by Abhayparashar31👋</p>
 
 
 
@@ -51,43 +53,84 @@
     <style>
         body {
             background-color:rgba(32, 33, 36, 1);
+            background-image: url('/static/bg.jpg');
+            background-position: center;
+            background-size: cover;
             text-align: center;
-            padding: 0px;
+            animation: zoom 40s ease-in-out infinite alternate-reverse;
+        }
+        @keyframes zoom{
+            0%{
+                background-size: 200%;
+            }
+            10%{
+                background-size: 190%;
+            }
+            20%{
+                background-size: 180%;
+            }
+            30%{
+                background-size: 170%;
+            }
+            40%{
+                background-size: 160%;
+            }
+            50%{
+                background-size: 150%;
+            }
+            60%{
+                background-size: 140%;
+            }
+            70%{
+                background-size: 130%;
+            }
+            80%{
+                background-size: 120%;
+            }
+
+            90%{
+                background-size: 110%;
+            }
+            100%{
+                background-size: 100%;
+            }
         }
         #main{
-                         margin: 3% 0% 3% 0%;                              
-         }
+            margin: 2% 0% 0px 0%;
+            
+        }
         h2{
-            font-family: 'Lucida Sans';
+            font-family: monospace;
             font-size: 30px;
-            color: #ffff;
+            color: chartreuse;
             text-decoration: underline;
         }
         h3{
           color: whitesmoke;
-          font-family: 'Lucida Sans Unicode';
+          font-family:Cambria;
         }
         form {
+            background-color:rgba(32, 33, 36, 1);
             width: 60%;
-            height:100%;
+            height: 90vh;    ;
             margin: 0px 30% 0px 20%;
             border: 2px solid blue;
-            box-shadow: 5px 10px 20px 30px rgb(65, 67, 71);;
+            box-shadow: 5px 10px 20px 15px whitesmoke;
         }
         input {
             margin: 0px 0px 0px 0px;
             padding: 0px 0px 0px 0px;
             width: 60%;
             background-color:rgba(32, 33, 36, 5) ;
-
-            color: white;
             font-size: 28px;
             text-align: center;
+            color: chartreuse;
         }
         input:focus{
             outline: none;
             border: none;
             border-bottom: 5px solid white;
+            color: chartreuse;
         }
         .dropdown{
             display: flex;
@@ -154,7 +197,7 @@
         
         /*Button*/
         #sub {
-            margin-top: 14px;
+            margin-top: 25px;
             width: 250px;
             height: 50px;
             color:rgba(32, 33, 36, 1);
@@ -171,6 +214,13 @@
             color: white;
             border: 2px solid white;
         }
+        .info{
+            color:yellow;
+            font-family: monospace;
+            font-size: 18px;
+            font-weight: 700;
+    
+           }
     </style>
 </body>
 
